@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- FIM GOOGLE FONTES -->
+    <!-- BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- FIM BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="style.css">
+
+    <script src="menu.js" defer></script>
+
+    <title>VINE PORTFOLIO</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <a href="#">
+                    <img src="images/logo.svg" alt="VINE LOGO">
+                </a>
+            </div><!--logo-->
+
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Especialidades</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Projetos</a></li>
+                </ul>
+            </nav>
+
+            <div class="btn-contato">
+                <a href="#">
+                    <button>Contato</button>
+                </a>
+            </div><!--btn-contato-->
+
+            <div class="btn-abrir-menu" id="btn-menu">
+                <i class="bi bi-list"></i>
+            </div>
+
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <i class="bi bi-x-lg"></i>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="#">Início</a></li>
+                        <li><a href="#">Especialidades</a></li>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Projetos</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </nav>
+
+            </div><!--menu-mobile-->
+            <div class="overlay-menu" id="overlay-menu"></div>
+        </div><!--interface-->
+    </header>
+
+    <main>
+        <section class="topo-do-site">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-topo-site">
+                        <h1>TRANSFORMANDO DESAFIOS EM OPORTUNIDADES<span>.</span></h1>
+                        <p>Bem-vindo ao meu portfólio, onde compartilho minha jornada de aprendizado em desenvolvimento
+                            web.</p>
+
+                        <div class="btn-contato">
+                            <a href="#">
+                                <button>Entre em contato</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="img-topo-site">
+                        <img src="images/black2.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="especiliadades">
+            <div class="interface">
+                <h2 class="titulo">ALGUNS PROJETOS <span>ABAIXO.</span></h2>
+                <p class="titulo" style="color: #00FF08;">Clicando nos cards, você será redirecionado para o projeto.
+                </p>
+                <div class="flex">
+                    <a href="https://english4u-zeta.vercel.app/">
+                        <div class="especialidades-box">
+                            <i class="bi bi-code-square"></i>
+                            <h3>English U4</h3>
+                            <p>Uma página estática com o intuito de simular uma plataforma de curso de inglês.
+                                O projeto é construído usando Next.js 14, Tailwind CSS e TypeScript.</p>
+                        </div>
+                    </a>
+                    <a href="https://vine-loja-jvuj.vercel.app/">
+                        <div class="especialidades-box">
+                            <i class="bi bi-cart"></i>
+                            <h3>Loja online</h3>
+                            <p>Um simulador de loja virtual. Este projeto foi desenvolvido utilizando React e integra
+                                uma
+                                API para obter dados dos
+                                produtos.</p>
+                        </div>
+                    </a>
+                    <a href="https://projeto-canil-react-vn.vercel.app/">
+                        <div class="especialidades-box">
+                            <i class="bi bi-check2-circle"></i>
+                            <h3>Canil</h3>
+                            <p>Uma página que estimula e incentiva a adoção de animais, criada para demonstrar
+                                habilidades
+                                em desenvolvimento web.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio">
+            <div class="interface">
+                <h2 class="titulo">MEU <span>PORTFÓLIO.</span></h2>
+                <div class="flex-projetos">
+                    <a href="https://vine-loja-jvuj.vercel.app/">
+                        <div class="img-port" style="background-image: url(images/loja.png);">
+                            <div class="overlay">Projeto 1</div>
+                        </div>
+                    </a>
+                    <a href="https://english4u-zeta.vercel.app/">
+                        <div class="img-port" style="background-image: url(images/curso.png);">
+                            <div class="overlay">Projeto 2</div>
+                        </div>
+                    </a>
+                    <a href="https://projeto-canil-react-vn.vercel.app/">
+                        <div class="img-port" style="background-image: url(images/canil.png);">
+                            <div class="overlay">Projeto 3</div>
+                        </div>
+                    </a>
+                    <a href="https://eco-impacto-upx-n4hy.vercel.app/">
+                        <div class="img-port" style="background-image: url(images/ecoimpacto.png);">
+                            <div class="overlay">Projeto 4</div>
+                        </div>
+                    </a>
+                    <a href="https://roupa-loja.vercel.app/cart">
+                        <div class="img-port" style="background-image: url(images/caputteno.png);">
+                            <div class="overlay">Projeto 5</div>
+                        </div>
+                    </a>
+                    <div class="img-port" style="background-image: url(images/getmovies.png);">
+                        <div class="overlay">Projeto 6</div>
+                    </div>
+                    <!-- <div class="img-port" style="background-image: url(images/imagem.jpg);">
+                        <div class="overlay">Projeto 2</div>
+                    </div> -->
+
+                </div>
+            </div>
+        </section>
+        <section class="sobre">
+            <div class="interface">
+                <div class="flex">
+                    <div class="img-sobre">
+                        <img src="images/vinefinalizado.png" alt="">
+                    </div>
+
+                    <div class="txt-sobre">
+                        <h2>MUITO PRAZER, <span>SOU VINÍCIUS OLIVEIRA.</span></h2>
+                        <p>Estudante da área de TI pela Newton Paiva - BH. Optei pela área após ter começado a estudar
+                            programação. Hoje tenho um conhecimento base sobre Desenvolvimento WEB, incluindo o
+                            conhecimento de Bibliotecas e
+                            Frameworks como por exemplo React e NEXTjs.
+                            Além disso, possuo conhecimento básico na linguagem JAVA(JavaFX e SWING) e em Banco de
+                            dados(MySQL).</p>
+                        <p>Atualmente, estou expandindo minhas habilidades estudando Node.js / Prisma e
+                            aprofundando meu conhecimento em SQL.</p>
+                        <div class="btn-social">
+                            <a href="https://github.com/vinefps"><button><i class="bi bi-github"></i></button></a>
+                            <a href="https://www.linkedin.com/in/vin%C3%ADcius-oliveira-534838288/"><button><i
+                                        class="bi bi-youtube"></i></button></a>
+                            <a href="https://www.linkedin.com/in/vin%C3%ADcius-oliveira-534838288/"><button><i
+                                        class="bi bi-linkedin"></i></button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="portfolio">
+            <div class="interface-2">
+                <h2 class="titulo">ESTOU APRENDENDO <span>(SKILLS).</span></h2>
+                <div id="container" class="container">
+                    <div id="frontend" class="column">
+                        <h2>Frontend</h2>
+                        <ul>
+                            <li><i class="fab fa-react icon"></i>React.js</li>
+                            <li><i class="fas fa-file-code icon"></i>Next.js</li>
+                            <li><i class="fab fa-bootstrap icon"></i>Bootstrap</li>
+                            <li><i class="fas fa-paint-brush icon"></i>Tailwind CSS</li>
+                        </ul>
+                    </div>
+                    <div id="backend" class="column">
+                        <h2>Backend</h2>
+                        <ul>
+                            <li class="tooltip">
+                                <i class="fab fa-node-js icon"></i>Node.js
+                            </li>
+                            <li><i class="fas fa-code icon"></i>Express</li>
+                            <li><i class="fas fa-database icon"></i>ORM: Prisma</li>
+                            <li><i class="fas fa-database icon"></i>Gerenciamento: DBeaver</li>
+                            <li><i class="fas fa-database icon"></i>SQL</li>
+                        </ul>
+                    </div>
+                    <div id="frameworks" class="column">
+                        <h2>Outros</h2>
+                        <ul>
+                            <li><i class="fas fa-code icon"></i>FIGMA</li>
+                            <li><i class="fas fa-code icon"></i>Versionamento de Código</li>
+                            <li><i class="fas fa-code icon"></i>Adaptabilidade</li>
+                            <li><i class="fas fa-code icon"></i>Flexibilidade</li>
+                            <li><i class="fas fa-code icon"></i>Vontade de Aprender</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="formulario">
+            <div class="interface">
+                <h2 class="titulo">FALA <span>COMIGO.</span></h2>
+
+                <form action="">
+                    <input type="text" name="" id="" placeholder="Seu nome completo:" required>
+                    <input type="text" name="" id="" placeholder="Seu e-mail:" required>
+                    <input type="text" name="" id="" placeholder="Seu celular:">
+                    <textarea name="" id="" placeholder="Sua mensagem" required></textarea>
+                    <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="interface">
+            <div class="line-footer">
+                <div class="flex">
+                    <div class="logo-footer">
+                        <img src="images/logo.svg" alt="VINE IMG">
+                    </div>
+                    <div class="btn-social">
+                        <a href="https://github.com/vinefps"><button><i class="bi bi-github"></i></button></a>
+                        <a href="https://www.linkedin.com/in/vin%C3%ADcius-oliveira-534838288/"><button><i
+                                    class="bi bi-youtube"></i></button></a>
+                        <a href="https://www.linkedin.com/in/vin%C3%ADcius-oliveira-534838288/"><button><i
+                                    class="bi bi-linkedin"></i></button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="line-footer borda">
+                <p><i class="bi bi-envelope-fill"></i> <a
+                        href="mailto:vinicius_os95@hotmail.com">vinicius_os95@hotmail.com</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
