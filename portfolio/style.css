@@ -586,3 +586,321 @@ a:focus, button:focus, input:focus, textarea:focus {
         right: auto;
     }
 }
+
+/* Melhorando a responsividade para telas médias */
+@media screen and (max-width: 1020px) and (min-width: 768px) {
+    section.especiliadades .flex {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .especiliadades .especialidades-box {
+        width: calc(50% - 40px);
+    }
+    
+    .img-port {
+        width: calc(50% - 20px);
+        margin: 0;
+    }
+    
+    section.portfolio .flex-projetos {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    /* CLASSES GERAIS */
+    .flex {
+        flex-direction: column;
+    }
+
+    .topo-do-site .flex {
+        flex-direction: column-reverse;
+    }
+
+    h2.titulo {
+        font-size: 34px;
+        line-height: 30px;
+    }
+
+    /* CABEÇALHO */
+    .menu-desktop,
+    .btn-contato {
+        display: none;
+    }
+
+    .btn-abrir-menu {
+        display: block;
+    }
+
+    /* TOPO DO SITE */
+    section.topo-do-site .flex {
+        gap: 40px;
+    }
+
+    section.topo-do-site {
+        padding: 20px 8%;
+    }
+
+    .topo-do-site h1 {
+        font-size: 30px;
+    }
+
+    .topo-do-site .img-topo-site img {
+        width: 100%;
+    }
+
+    /* ESPECIALIDADES */
+    section.especiliadades {
+        padding: 40px 8%;
+    }
+
+    /* SOBRE */
+    section.sobre {
+        padding: 80px 8%;
+    }
+
+    .sobre .txt-sobre h2 {
+        font-size: 34px;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    .btn-social {
+        text-align: center;
+    }
+
+    .img-sobre img {
+        border-radius: 15px;
+    }
+
+    /* PORTFÓLIO */
+    section.portfolio {
+        padding: 80px 8%;
+    }
+
+    .img-port {
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    section.portfolio .flex {
+        gap: 60px;
+    }
+
+    /* RODAPÉ */
+    footer .flex {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    footer .line-footer {
+        text-align: center;
+    }
+    
+    /* Container de skills */
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .column {
+        width: 100%;
+        max-width: 400px;
+        margin-bottom: 20px;
+    }
+}
+
+/* Melhorando espaçamento e legibilidade em mobile */
+@media screen and (max-width: 767px) {
+    section {
+        padding: 60px 5% !important;
+    }
+    
+    h2.titulo {
+        font-size: 28px !important;
+        margin-bottom: 20px;
+    }
+    
+    .especiliadades .especialidades-box {
+        padding: 30px 20px;
+    }
+    
+    .sobre .txt-sobre p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+    
+    form input, form textarea {
+        padding: 15px 12px;
+        font-size: 16px;
+    }
+}
+
+/* Design do botão voltar ao topo */
+#btn-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #00FF08;
+    color: #000;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+    display: none;
+    z-index: 999;
+    transition: all 0.3s;
+    opacity: 0.8;
+    box-shadow: 0 0 10px rgba(0, 255, 8, 0.5);
+}
+
+#btn-top:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* Estilo para animação fade-in */
+.fade-in {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+/*FERRAMENTAS/SKILLS*/
+.interface-2 {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    display: flex !important;
+    gap: 20px;
+    max-width: 1000px;
+    margin-top: 40px;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.column {
+    background-color: #FFF !important;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+    transition: box-shadow 0.3s, transform 0.3s !important;
+}
+
+.column:hover {
+    transform: translateY(-10px) !important;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.column h2 {
+    color: #00FF08;
+    margin-top: 0;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.column ul {
+    list-style-type: none;
+    padding: 0;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.column ul li {
+    margin-bottom: 10px;
+    display: flex !important;
+    align-items: center;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.column ul li:hover {
+    transform: scale(1.05);
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -100px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Garantir que todos os elementos dentro de interface-2 sejam visíveis */
+.interface-2 * {
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+/* Forçar exibição para células de lista */
+#frontend li, #backend li, #frameworks li {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+/* Correção para ícones do FontAwesome */
+.fab, .fas {
+    display: inline-block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+/* CORREÇÕES DE VISIBILIDADE GERAIS */
+.especialidades-box, .img-port, .txt-sobre, .column {
+    opacity: 1 !important; 
+    transform: none !important;
+    transition: box-shadow 0.3s, transform 0.3s !important;
+}
+
+.img-port {
+    background-color: #333; /* Fallback caso a imagem não carregue */
+}
+
+/* Garantir que as imagens sejam exibidas */
+.especialidades-box {
+    display: block !important;
+    visibility: visible !important;
+}
