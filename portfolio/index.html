@@ -4,6 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Vinícius Oliveira - Desenvolvedor Web Front-end com habilidades em React, Next.js e mais tecnologias modernas">
+    <meta name="keywords" content="desenvolvedor web, front-end, portfolio, React, Next.js, Vinícius Oliveira">
+    <meta name="author" content="Vinícius Oliveira">
+    <meta name="robots" content="index, follow">
+    <!-- Open Graph Protocol para compartilhamento em redes sociais -->
+    <meta property="og:title" content="Vinícius Oliveira | Desenvolvedor Web">
+    <meta property="og:description" content="Portfólio de desenvolvimento web com foco em React e NextJS">
+    <meta property="og:image" content="images/vinefinalizado.png">
+    <meta property="og:url" content="https://seudominio.com">
+    <meta property="og:type" content="website">
+    
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,22 +38,23 @@
     <header>
         <div class="interface">
             <div class="logo">
-                <a href="#">
-                    <img src="images/logo.svg" alt="VINE LOGO">
+                <a href="#inicio">
+                    <img src="images/logo.svg" alt="VINE LOGO - Portfólio de Vinícius Oliveira">
                 </a>
             </div><!--logo-->
 
             <nav class="menu-desktop">
                 <ul>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">Especialidades</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Projetos</a></li>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#especialidades">Especialidades</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
 
             <div class="btn-contato">
-                <a href="#">
+                <a href="#contato">
                     <button>Contato</button>
                 </a>
             </div><!--btn-contato-->
@@ -58,11 +70,11 @@
 
                 <nav>
                     <ul>
-                        <li><a href="#">Início</a></li>
-                        <li><a href="#">Especialidades</a></li>
-                        <li><a href="#">Sobre</a></li>
-                        <li><a href="#">Projetos</a></li>
-                        <li><a href="#">Contato</a></li>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#especialidades">Especialidades</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#projetos">Projetos</a></li>
+                        <li><a href="#contato">Contato</a></li>
                     </ul>
                 </nav>
 
@@ -72,7 +84,7 @@
     </header>
 
     <main>
-        <section class="topo-do-site">
+        <section id="inicio" class="topo-do-site">
             <div class="interface">
                 <div class="flex">
                     <div class="txt-topo-site">
@@ -81,26 +93,26 @@
                             web.</p>
 
                         <div class="btn-contato">
-                            <a href="#">
+                            <a href="#contato">
                                 <button>Entre em contato</button>
                             </a>
                         </div>
                     </div>
 
                     <div class="img-topo-site">
-                        <img src="images/black2.png" alt="">
+                        <img src="images/black2.png" alt="Ilustração de desenvolvedor web">
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="especiliadades">
+        <section id="especialidades" class="especiliadades">
             <div class="interface">
                 <h2 class="titulo">ALGUNS PROJETOS <span>ABAIXO.</span></h2>
                 <p class="titulo" style="color: #00FF08;">Clicando nos cards, você será redirecionado para o projeto.
                 </p>
                 <div class="flex">
-                    <a href="https://english4u-zeta.vercel.app/">
+                    <a href="https://english4u-zeta.vercel.app/" aria-label="Projeto English U4">
                         <div class="especialidades-box">
                             <i class="bi bi-code-square"></i>
                             <h3>English U4</h3>
@@ -108,7 +120,7 @@
                                 O projeto é construído usando Next.js 14, Tailwind CSS e TypeScript.</p>
                         </div>
                     </a>
-                    <a href="https://vine-loja-jvuj.vercel.app/">
+                    <a href="https://vine-loja-jvuj.vercel.app/" aria-label="Projeto Loja Online">
                         <div class="especialidades-box">
                             <i class="bi bi-cart"></i>
                             <h3>Loja online</h3>
@@ -118,7 +130,7 @@
                                 produtos.</p>
                         </div>
                     </a>
-                    <a href="https://projeto-canil-react-vn.vercel.app/">
+                    <a href="https://projeto-canil-react-vn.vercel.app/" aria-label="Projeto Canil">
                         <div class="especialidades-box">
                             <i class="bi bi-check2-circle"></i>
                             <h3>Canil</h3>
@@ -131,50 +143,48 @@
             </div>
         </section>
 
-        <section class="portfolio">
+        <section id="projetos" class="portfolio">
             <div class="interface">
                 <h2 class="titulo">MEU <span>PORTFÓLIO.</span></h2>
                 <div class="flex-projetos">
-                    <a href="https://vine-loja.vercel.app/">
+                    <a href="https://vine-loja.vercel.app/" aria-label="Projeto Loja Virtual">
                         <div class="img-port" style="background-image: url(images/loja.png);">
                             <div class="overlay">Projeto 1</div>
                         </div>
                     </a>
-                    <a href="https://english4u-zeta.vercel.app/">
+                    <a href="https://english4u-zeta.vercel.app/" aria-label="Projeto English U4">
                         <div class="img-port" style="background-image: url(images/curso.png);">
                             <div class="overlay">Projeto 2</div>
                         </div>
                     </a>
-                    <a href="https://projeto-canil-react-vn.vercel.app/">
+                    <a href="https://projeto-canil-react-vn.vercel.app/" aria-label="Projeto Canil">
                         <div class="img-port" style="background-image: url(images/canil.png);">
                             <div class="overlay">Projeto 3</div>
                         </div>
                     </a>
-                    <a href="https://eco-impacto-upx-n4hy.vercel.app/">
+                    <a href="https://eco-impacto-upx-n4hy.vercel.app/" aria-label="Projeto EcoImpacto">
                         <div class="img-port" style="background-image: url(images/ecoimpacto.png);">
                             <div class="overlay">Projeto 4</div>
                         </div>
                     </a>
-                    <a href="https://roupa-loja.vercel.app/cart">
+                    <a href="https://roupa-loja.vercel.app/cart" aria-label="Projeto Caputteno">
                         <div class="img-port" style="background-image: url(images/caputteno.png);">
                             <div class="overlay">Projeto 5</div>
                         </div>
                     </a>
-                    <div class="img-port" style="background-image: url(images/getmovies.png);">
-                        <div class="overlay">Projeto 6</div>
-                    </div>
-                    <!-- <div class="img-port" style="background-image: url(images/imagem.jpg);">
-                        <div class="overlay">Projeto 2</div>
-                    </div> -->
-
+                    <a href="https://seusite.com/getmovies" aria-label="Projeto GetMovies">
+                        <div class="img-port" style="background-image: url(images/getmovies.png);">
+                            <div class="overlay">Projeto 6</div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
-        <section class="sobre">
+        <section id="sobre" class="sobre">
             <div class="interface">
                 <div class="flex">
                     <div class="img-sobre">
-                        <img src="images/vinefinalizado.png" alt="">
+                        <img src="images/vinefinalizado.png" alt="Foto do desenvolvedor Vinícius Oliveira">
                     </div>
 
                     <div class="txt-sobre">
@@ -188,17 +198,43 @@
                         <p>Atualmente, estou expandindo minhas habilidades estudando Node.js / Prisma e
                             aprofundando meu conhecimento em SQL.</p>
                         <div class="btn-social">
-                            <a href="https://github.com/vinefps"><button><i class="bi bi-github"></i></button></a>
-                            <a href="https://www.linkedin.com/in/vin%C3%ADcius-oliveira-534838288/"><button><i
+                            <a href="https://github.com/vinefps" aria-label="GitHub de Vinícius Oliveira"><button><i class="bi bi-github"></i></button></a>
+                            <a href="https://www.linkedin.com/in/vin%C3%ADcius-oliveira-534838288/" aria-label="YouTube de Vinícius Oliveira"><button><i
                                         class="bi bi-youtube"></i></button></a>
-                            <a href="https://www.linkedin.com/in/vin%C3%ADcius-oliveira-534838288/"><button><i
+                            <a href="https://www.linkedin.com/in/vin%C3%ADcius-oliveira-534838288/" aria-label="LinkedIn de Vinícius Oliveira"><button><i
                                         class="bi bi-linkedin"></i></button></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Timeline adicionada -->
+                <div class="timeline">
+                    <h3>Minha Jornada</h3>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2022</div>
+                        <div class="timeline-content">
+                            <h4>Início dos estudos em Programação</h4>
+                            <p>Primeiros contatos com HTML, CSS e JavaScript</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2023</div>
+                        <div class="timeline-content">
+                            <h4>Ingresso na Newton Paiva</h4>
+                            <p>Início da graduação em TI</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2024</div>
+                        <div class="timeline-content">
+                            <h4>Desenvolvimento de Projetos</h4>
+                            <p>Aprofundamento em React e Next.js</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="portfolio">
+        <section id="skills" class="portfolio">
             <div class="interface-2">
                 <h2 class="titulo">ESTOU APRENDENDO <span>(SKILLS).</span></h2>
                 <div id="container" class="container">
@@ -237,15 +273,15 @@
             </div>
         </section>
 
-        <section class="formulario">
+        <section id="contato" class="formulario">
             <div class="interface">
                 <h2 class="titulo">FALA <span>COMIGO.</span></h2>
 
-                <form action="">
-                    <input type="text" name="" id="" placeholder="Seu nome completo:" required>
-                    <input type="text" name="" id="" placeholder="Seu e-mail:" required>
-                    <input type="text" name="" id="" placeholder="Seu celular:">
-                    <textarea name="" id="" placeholder="Sua mensagem" required></textarea>
+                <form id="contact-form" action="">
+                    <input type="text" name="nome" id="nome" placeholder="Seu nome completo:" required>
+                    <input type="email" name="email" id="email" placeholder="Seu e-mail:" required>
+                    <input type="tel" name="telefone" id="telefone" placeholder="Seu celular:">
+                    <textarea name="mensagem" id="mensagem" placeholder="Sua mensagem" required></textarea>
                     <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
                 </form>
             </div>
@@ -258,13 +294,13 @@
             <div class="line-footer">
                 <div class="flex">
                     <div class="logo-footer">
-                        <img src="images/logo.svg" alt="VINE IMG">
+                        <img src="images/logo.svg" alt="VINE Logo">
                     </div>
                     <div class="btn-social">
-                        <a href="https://github.com/vinefps"><button><i class="bi bi-github"></i></button></a>
-                        <a href="https://www.linkedin.com/in/vin%C3%ADcius-oliveira-534838288/"><button><i
+                        <a href="https://github.com/vinefps" aria-label="GitHub de Vinícius Oliveira"><button><i class="bi bi-github"></i></button></a>
+                        <a href="https://www.linkedin.com/in/vin%C3%ADcius-oliveira-534838288/" aria-label="YouTube de Vinícius Oliveira"><button><i
                                     class="bi bi-youtube"></i></button></a>
-                        <a href="https://www.linkedin.com/in/vin%C3%ADcius-oliveira-534838288/"><button><i
+                        <a href="https://www.linkedin.com/in/vin%C3%ADcius-oliveira-534838288/" aria-label="LinkedIn de Vinícius Oliveira"><button><i
                                     class="bi bi-linkedin"></i></button></a>
                     </div>
                 </div>
